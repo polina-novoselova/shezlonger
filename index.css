@@ -1,0 +1,97 @@
+@import url('/css/header.css');
+@import url('/css/possibilities.css');
+@import url('/css/registration.css');
+@import url('/css/usage.css');
+@import url('/css/feedback.css');
+@import url('/css/cta.css');
+@import url('/css/news.css');
+@import url('/css/footer.css');
+
+@font-face {
+    font-family: 'CoreRhino';
+    src: url('/fonts/CoreRhino85Black.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SFpro700';
+    src: url('/fonts/SFProDisplay-Bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SFpro400';
+    src: url('/fonts/SFProDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat400';
+    src: url('/fonts/Montserrat400.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat200';
+    src: url('/fonts/Montserrat200.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat500';
+    src: url('/fonts/Montserrat500.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat700';
+    src: url('/fonts/Montserrat700.woff2') format('woff2');
+}
+
+body {
+    margin: 0 auto;
+    background-color: #F5F9F9;
+    background-image: url(/assets/blue-lines.svg), url(/assets/white-line.svg);
+    background-size: 560px auto, 1500px auto;
+    background-repeat: no-repeat;
+    background-position: right top, left top;
+}
+
+h1 {
+    font-family: 'CoreRhino';
+    font-size: 94px;
+    line-height: 120%;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 62px;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 56px;
+    line-height: 120%;
+}
+
+h4 {
+    font-family: 'Montserrat500';
+    font-size: 36px;
+    line-height: 120%;
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 120%;
+}
+
+h6 {
+    font-family: 'Montserrat500';
+    font-size: 24px;
+    line-height: 140%;
+}
+
+p {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.width-container {
+    max-width: 1920px;
+    padding: 0 130px;
+}

@@ -1,30 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
 
-    <link rel="stylesheet" href="/reset.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/index.css" />
 
     <title>Шезлонгер - приложение бронирования для пляжного отдыха</title>
-</head>
-<body>
-    <header>
-        <nav></nav>
+  </head>
+  <body>
+    <header class="width-container">
+        <!-- Панель навигации -->
+      <nav class="nav-bar">
         <div>
-            <div>
-                <h1>Шезлонгер</h1>
-                <h4>Метаприложение для идеального отдыха</h4>
-                <p>Все в одном приложении для вашего лучшего отдыха на пляже. Скачай уже сейчас и не беспокойся об отдыхе</p>
+          <img
+            className="logo-img"
+            src="/assets/logo.svg"
+            alt="Логотип компании Шезлонгер"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="">О нас</a></li>
+          <li><a href="#possibilities">Возможности</a></li>
+          <li><a href="#usage">Как пользоваться</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a class="dwn-link" href="" target="_blank">Скачать</a></li>
+        </ul>
+      </nav>
+      <!-- Главный экран -->
+      <div class="mainscreen">
+        <div class="main-textblock">
+          <h1>Шезлонгер</h1>
+          <h6>Метаприложение для идеального отдыха</h6>
+          <p>
+            Все в одном приложении для вашего лучшего отдыха на пляже. Скачай
+            уже сейчас и не беспокойся об отдыхе
+          </p>
+          <!-- Ссылки на скачивание приложения -->
+          <div class="app-links">
+            <a
+              class="appstore-link"
+              href="https://apps.apple.com/ru/app/%D1%88%D0%B5%D0%B7%D0%BB%D0%BE%D0%BD%D0%B3%D0%B5%D1%80/id6471227554"
+              target="_blank"
+              ><img src="/assets/iconAppStore.png" alt="Иконка AppStore" />
+              <p>Available on the<span>App Store</span></p></a
+            >
+            <a
+              class="playmarket-link"
+              href="https://www.rustore.ru/catalog/app/com.deck_chair"
+              target="_blank"
+              ><img src="/assets/iconPlayMarket.png" alt="Иконка PlayMarket" />
+              <p>Get it on<span>Google Play</span></p></a
+            >
+          </div>
+          <!-- Преимущества -->
+          <div class="proses">
+            <div class="proses-item">
+              <p>100 <span>стран</span></p>
             </div>
-            <div>
-                img phone
+            <div class="proses-item">
+              <p>120 <span>услуг</span></p>
             </div>
-        </div>  
+            <div class="proses-item">
+              <p>100М+ <span>пользователей</span></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="mainscreen-img"
+            src="/assets/mainscreenImg.png"
+            alt="Мокап приложения Шезлонгер"
+          />
+        </div>
+      </div>
     </header>
 
-    
-</body>
+    <main class="width-container">
+        <!-- Раздел наши возможности -->
+      <section class="possibilities" id="possibilities">
+        
+      </section>
+
+      <section class="registration"></section>
+      <section class="usage" id="usage"></section>
+      <section class="feedback"></section>
+      <section class="cta"></section>
+      <section class="news" id="news"></section>
+    </main>
+
+    <footer class="width-container"></footer>
+  </body>
 </html>

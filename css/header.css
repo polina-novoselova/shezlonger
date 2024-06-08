@@ -1,0 +1,144 @@
+.nav-bar {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar img {
+  width: 88px;
+  height: 78px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.nav-links a {
+  font-family: "Montserrat400";
+  font-size: 16px;
+  line-height: 150%;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+}
+
+.dwn-link {
+  padding: 12px 68px;
+  text-align: center;
+  background-color: #fbd24c;
+  border-radius: 30px;
+}
+
+.dwn-link:hover {
+  background-color: #fcd861;
+}
+
+.mainscreen {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-textblock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 540px;
+}
+
+.main-textblock h6 {
+  margin-top: 10px;
+}
+
+.main-textblock p {
+  margin-top: 10px;
+  font-family: "Montserrat200";
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.app-links {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.app-links a {
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  width: 190px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.appstore-link {
+  background-color: #fbd24c;
+}
+
+.playmarket-link {
+  background-color: #7cd5dc;
+}
+
+.app-links img {
+  width: 35px;
+  height: 35px;
+}
+
+.app-links p {
+  margin-top: 0;
+  font-family: "SFpro400";
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.app-links span {
+  display: block;
+  font-family: "SFpro700";
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.proses {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  width: 333px;
+}
+
+.proses-item {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.proses-item:last-child {
+  border-right: none;
+}
+
+.proses-item p {
+  margin-top: 0;
+  font-family: "Montserrat700";
+  font-size: 20px;
+  text-align: center;
+}
+
+.proses-item span {
+  font-family: "Montserrat400";
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #3d8292;
+}
+
+.mainscreen-img {
+  width: 692px;
+  height: 876px;
+}
