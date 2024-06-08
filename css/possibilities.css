@@ -1,0 +1,38 @@
+.possibilities {
+  margin-top: 60px;
+}
+
+.possibilities h2 {
+  text-align: center;
+}
+
+.possibilities img {
+  width: 84px;
+  height: 85px;
+}
+
+.possibilities h6 {
+  margin-top: 10px;
+}
+
+.possibilities p {
+  margin-top: 5px;
+  font-family: "Montserrat400";
+  font-size: 16px;
+  line-height: 150%;
+  color: #adadab;
+}
+
+.possibilities-items {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.psblt-item {
+  padding: 20px 10px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  background-color: #F5F9F9;
+}

@@ -45,7 +45,7 @@
 body {
     margin: 0 auto;
     background-color: #F5F9F9;
-    background-image: url(/assets/blue-lines.svg), url(/assets/white-line.svg);
+    background-image: url(/assets/background/blue-lines.svg), url(/assets/background/white-line.svg);
     background-size: 560px auto, 1500px auto;
     background-repeat: no-repeat;
     background-position: right top, left top;
@@ -59,6 +59,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'CoreRhino';
     font-size: 62px;
     line-height: 150%;
 }
@@ -92,6 +93,7 @@ p {
 }
 
 .width-container {
+    margin: 0 auto;
     max-width: 1920px;
     padding: 0 130px;
 }
