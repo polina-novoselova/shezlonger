@@ -43,7 +43,7 @@
 }
 
 .mainscreen {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   display: flex;
   justify-content: space-between;
 }
@@ -65,6 +65,11 @@
   font-weight: 200;
   font-size: 16px;
 }
+
+.mainscreen img {
+  width: 792px;
+}
+
 
 .app-links {
   margin-top: 40px;
@@ -144,8 +149,4 @@
   line-height: 150%;
   text-align: center;
   color: #3d8292;
-}
-
-.mainscreen-img {
-  width: 692px;
 }
