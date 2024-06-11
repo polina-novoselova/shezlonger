@@ -151,3 +151,9 @@
   text-align: center;
   color: #3d8292;
 }
+
+@media (max-width: 1280px) {
+  .nav-links {
+    gap: 20px;
+  }
+}

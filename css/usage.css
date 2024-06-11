@@ -1,0 +1,36 @@
+.usage {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.usage-step {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.usage-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.usage-dscrpt {
+  display: flex;
+  flex-direction: column;
+  max-width: 680px;
+  gap: 30px;
+  background-image: url("/assets/usage/circle.png"); /* Путь к вашему изображению */
+  background-repeat: no-repeat;
+  background-size: 37px 37px;
+  background-position: top left;
+}
+
+.usage-dscrpt p {
+  margin-left: 10px;
+  border-left: 1px solid black;
+  padding-left: 20px;
+}

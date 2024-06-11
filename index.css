@@ -78,6 +78,7 @@ h4 {
 }
 
 h5 {
+    font-family: 'Montserrat500';
     font-size: 32px;
     line-height: 120%;
 }
@@ -105,4 +106,22 @@ p {
     .width-container {
       padding: 0 80px;
     }
+  }
+
+  @media (max-width: 999px) {
+    .width-container {
+        padding: 0 40px;
+      }
+  }
+
+  @media (max-width: 768px) {
+    .width-container {
+        padding: 0 20px;
+      }
+  }
+
+  @media (max-width: 350px) {
+    .width-container {
+        padding: 0 10px;
+      }
   }
