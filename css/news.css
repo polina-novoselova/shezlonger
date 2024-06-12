@@ -1,0 +1,40 @@
+.news {
+    margin-top: 100px;
+}
+
+.news-wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 400px;
+}
+
+.news-item img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+.news-item div {
+    display: flex;
+    flex-direction: column;    
+}
+
+.news-item h6 {
+    margin-top: 10px;
+}
+
+.news-date {
+    opacity: 0.7;
+}
+
+.news-text {
+    margin-top: 5px;
+}

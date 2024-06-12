@@ -1,0 +1,59 @@
+.feedback {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.feedback-first-row {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.feedback-second-row {
+    display: flex;
+    gap: 40px;
+}
+
+.feedback-item {
+  display: flex;
+  height: 270px;
+  gap: 20px;
+}
+
+.avatar {
+  width: 125px;
+  height: 125px;
+  align-self: flex-end;
+}
+
+.text-block {
+  padding: 0 40px;
+  width: 600px;
+  background-image: url(/assets/feedback/feedback-frame.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-date {
+  margin-top: 5px;
+}
+
+.feedback-title {
+  margin-top: 15px;
+  font-family: "Montserrat700";
+}
+
+.feedback-text {
+  margin-top: 5px;
+  font-family: "Montserrat200";
+  font-size: 14px;
+}
