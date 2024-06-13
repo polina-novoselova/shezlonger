@@ -1,0 +1,50 @@
+footer {
+  background-color: #f5f9f9;
+  box-shadow: 0 -1px 16px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  margin-top: 60px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.provisions {
+  display: flex;
+  align-items: end;
+  gap: 30px;
+}
+
+.provisions a:hover {
+    text-decoration: underline;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-links a {
+  transition: transform 0.7s ease;
+}
+
+.contact-links a:hover {
+  transform: scale(1.1);
+}
+
+.links-wrapper {
+  margin-top: 8px;
+  display: flex;
+  gap: 12px;
+}
+
+.footer-cta {
+  align-content: center;
+}

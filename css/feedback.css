@@ -1,4 +1,33 @@
-.feedback {
+/* .feedback {
+  margin-top: 100px;
+  position: relative;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev img, .next img {
+  width: 25px;
+  height: 25px;
+}
+
+.slider-inner{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -15,6 +44,95 @@
 .feedback-second-row {
     display: flex;
     gap: 40px;
+}
+
+.feedback-item {
+  display: flex;
+  height: 270px;
+  gap: 20px;
+}
+
+.avatar {
+  width: 125px;
+  height: 125px;
+  align-self: flex-end;
+}
+
+.text-block {
+  padding: 0 40px;
+  width: 600px;
+  background-image: url(/assets/feedback/feedback-frame.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-wrapper {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-date {
+  margin-top: 5px;
+}
+
+.feedback-title {
+  margin-top: 15px;
+  font-family: "Montserrat700";
+}
+
+.feedback-text {
+  margin-top: 5px;
+  font-family: "Montserrat200";
+  font-size: 14px;
+} */
+
+.feedback {
+  margin-top: 100px;
+  position: relative;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev img, .next img {
+  width: 25px;
+  height: 25px;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  transition: transform 0.5s ease;
+}
+
+.feedback-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
 }
 
 .feedback-item {

@@ -34,3 +34,9 @@
   border-left: 1px solid black;
   padding-left: 20px;
 }
+
+@media (max-width: 1024px) {
+  .usage-img {
+    max-width: 360px;
+  }
+}
