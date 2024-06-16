@@ -38,7 +38,7 @@
   transform: translate(0);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
   .nav-links {
     display: none;
   }
@@ -48,30 +48,13 @@
   }
 
   .burger-btn {
-    position: absolute;
     display: block;
     background: none;
     border: none;
-    cursor: pointer;
-    background-repeat: no-repeat;
+    width: 34px;
+    height: 34px;
+    background-image: url(../assets/mainscreen/btn-burger-menu.svg);
     background-size: contain;
-    background-position: center;
-  }
-
-  .burger-btn {
-    left: 16px;
-    top: 24px;
-    width: 34px;
-    height: 34px;
-    background-image: url(../assets/menu-burger.png);
-    z-index: 100;
-  }
-
-  .burger-btn_open {
-    top: 20px;
-    width: 34px;
-    height: 34px;
-    background-image: url(../assets/menu-burger.png);
   }
 
   .burger-btn:hover,

@@ -251,6 +251,9 @@
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
 @media (max-width: 375px) {
+  .nav-bar {
+    justify-content: space-between;
+  }
   
   .mainscreen {
     margin-top: 50px;
