@@ -10,37 +10,37 @@
 
 @font-face {
   font-family: "CoreRhino";
-  src: url("../fonts/CoreRhino85Black.woff2") format("woff2");
+  src: url("./fonts/CoreRhino85Black.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "SFpro700";
-  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
+  src: url("./fonts/SFProDisplay-Bold.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "SFpro400";
-  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
+  src: url("./fonts/SFProDisplay-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat400";
-  src: url("../fonts/Montserrat400.woff2") format("woff2");
+  src: url("./fonts/Montserrat400.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat200";
-  src: url("../fonts/Montserrat200.woff2") format("woff2");
+  src: url("./fonts/Montserrat200.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat500";
-  src: url("../fonts/Montserrat500.woff2") format("woff2");
+  src: url("./fonts/Montserrat500.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Montserrat700";
-  src: url("../fonts/Montserrat700.woff2") format("woff2");
+  src: url("./fonts/Montserrat700.woff2") format("woff2");
 }
 
 body {
