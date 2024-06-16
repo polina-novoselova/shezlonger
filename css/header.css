@@ -250,7 +250,7 @@
 
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .nav-bar {
     justify-content: space-between;
     align-content: center;
@@ -262,7 +262,6 @@
   }
   
   .main-textblock {
-    /* justify-content: center; */
     max-width: 340px;
   }
   

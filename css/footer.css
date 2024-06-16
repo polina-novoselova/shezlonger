@@ -74,7 +74,7 @@ footer {
 
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .footer {
     margin-top: 40px;
     padding: 20px 0;

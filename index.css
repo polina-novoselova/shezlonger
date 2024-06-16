@@ -209,7 +209,7 @@ a {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .width-container {
     margin: 0 auto;
     padding: 0 16px;

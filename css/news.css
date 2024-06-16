@@ -61,7 +61,7 @@
 
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .news {
     margin-top: 20px;
   }

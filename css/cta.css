@@ -46,7 +46,7 @@
 
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
-@media (max-width: 375px) {
+@media (max-width: 450px) {
     .cta {
         margin-top: 60px;
         height: 585px;
