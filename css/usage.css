@@ -70,11 +70,13 @@
 @media (max-width: 375px) {
   .usage {
     margin-top: 60px;
+    gap: 20px;
   }
 
   .usage-step {
     margin-top: 20px;
     flex-direction: column;
+    gap: 20px;
   }
 
   .usage-img {
