@@ -8,8 +8,8 @@
   margin-top: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 200px;
 }
 
 .usage-img {

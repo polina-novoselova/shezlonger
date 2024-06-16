@@ -27,8 +27,8 @@
 
 .burger-content {
   padding: 20px;
-  width: 312px;
-  height: 100vh;
+  width: 70%;
+  height: 100%;
   background-color: #F5F9F9;
   overflow-y: auto;
   transition: transform 0.3s linear;
@@ -57,8 +57,7 @@
     background-size: contain;
   }
 
-  .burger-btn:hover,
-  .burger-btn_open:hover {
+  .burger-btn:hover {
     transform: rotate(360deg);
     transition: 0.3s;
   }
@@ -69,15 +68,15 @@
   }
 
   .burger__nav {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 26px;
   }
 
   .burger__nav-link {
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 120%px;
     color: #121212;
     text-decoration: none;
     transition: 0.5s;
@@ -86,36 +85,21 @@
   .burger__nav-link:hover {
     border-bottom: 1px solid;
     color: #000000;
-    opacity: 0.5;
   }
 
-  .burger__contacts {
-    margin-top: 90px;
+  .burger-footer {
+
+  }  
+
+  .burger-contact-links {
+
   }
 
-  .burger__contacts-title {
-    font-size: 16px;
-    line-height: 22px;
-    color: #000000;
-    opacity: 0.5;
+  .burger-app-links {
+    
   }
 
-  .burger__contact-items {
-    margin-top: 10px;
-  }
+  .burger-privacy {
 
-  .burger__number-link,
-  .burger__tg-link {
-    font-size: 20px;
-    line-height: 35px;
-    color: #121212;
-    text-decoration: none;
-    transition: 0.05s;
-  }
-
-  .burger__number-link:hover,
-  .burger__tg-link:hover {
-    border-bottom: 2px solid #121212;
-    opacity: 50%;
   }
 }
