@@ -32,3 +32,52 @@
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
   background-color: #F5F9F9;
 }
+
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+@media (max-width: 768px) {
+  .possibilities {
+    margin-top: 60px;
+  }
+  
+  .possibilities img {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .possibilities p {
+    font-size: 10px;
+  }
+  
+  .possibilities-items {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+  }
+  
+  .psblt-item {
+    flex: 1 1 calc(50% - 32px);
+    box-sizing: border-box;
+  }
+}
+
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 375px) {
+  .possibilities {
+    margin-top: 40px;
+  }
+  
+  .possibilities img {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .possibilities-items {
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

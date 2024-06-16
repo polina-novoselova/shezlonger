@@ -1,247 +1,249 @@
-@import url('./css/header.css');
-@import url('./css/possibilities.css');
-@import url('./css/registration.css');
-@import url('./css/usage.css');
-@import url('./css/feedback.css');
-@import url('./css/cta.css');
-@import url('./css/news.css');
-@import url('./css/footer.css');
+@import url("./css/header.css");
+@import url("./css/possibilities.css");
+@import url("./css/registration.css");
+@import url("./css/usage.css");
+@import url("./css/feedback.css");
+@import url("./css/cta.css");
+@import url("./css/news.css");
+@import url("./css/footer.css");
+@import url("./css/burger.css");
 
 @font-face {
-    font-family: 'CoreRhino';
-    src: url('./fonts/CoreRhino85Black.woff2') format('woff2');
+  font-family: "CoreRhino";
+  src: url("../fonts/CoreRhino85Black.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'SFpro700';
-    src: url('./fonts/SFProDisplay-Bold.woff2') format('woff2');
+  font-family: "SFpro700";
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'SFpro400';
-    src: url('./fonts/SFProDisplay-Regular.woff2') format('woff2');
+  font-family: "SFpro400";
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Montserrat400';
-    src: url('./fonts/Montserrat400.woff2') format('woff2');
+  font-family: "Montserrat400";
+  src: url("../fonts/Montserrat400.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Montserrat200';
-    src: url('./fonts/Montserrat200.woff2') format('woff2');
+  font-family: "Montserrat200";
+  src: url("../fonts/Montserrat200.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Montserrat500';
-    src: url('./fonts/Montserrat500.woff2') format('woff2');
+  font-family: "Montserrat500";
+  src: url("../fonts/Montserrat500.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: 'Montserrat700';
-    src: url('./fonts/Montserrat700.woff2') format('woff2');
+  font-family: "Montserrat700";
+  src: url("../fonts/Montserrat700.woff2") format("woff2");
 }
 
 body {
-    margin: 0 auto;
-    height: 100%;
-    background-color: #F5F9F9;
-    background-image: url(./assets/background/blue-lines.svg), url(./assets/background/white-line.svg);
-    background-size: contain, 1500px auto;
-    background-repeat: no-repeat;
-    background-position: right top, left top;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #f5f9f9;
+  background-image: url(../assets/background/blue-lines.svg),
+    url(../assets/background/white-line.svg);
+  background-size: contain, 1500px auto;
+  background-repeat: no-repeat;
+  background-position: right top, left top;
 }
 
 h1 {
-    font-family: 'CoreRhino';
-    font-size: 94px;
-    line-height: 120%;
-    text-transform: capitalize;
+  font-family: "CoreRhino";
+  font-size: 94px;
+  line-height: 120%;
+  text-transform: capitalize;
 }
 
 h2 {
-    font-family: 'CoreRhino';
-    font-size: 62px;
-    line-height: 150%;
-    text-align: center;
+  font-family: "CoreRhino";
+  font-size: 62px;
+  line-height: 150%;
+  text-align: center;
 }
 
 h3 {
-    font-family: 'CoreRhino';
-    font-size: 56px;
-    line-height: 120%;
+  font-family: "CoreRhino";
+  font-size: 56px;
+  line-height: 120%;
 }
 
 h4 {
-    font-family: 'Montserrat500';
-    font-size: 36px;
-    line-height: 120%;
+  font-family: "Montserrat500";
+  font-size: 36px;
+  line-height: 120%;
 }
 
 h5 {
-    font-family: 'Montserrat500';
-    font-size: 32px;
-    line-height: 120%;
+  font-family: "Montserrat500";
+  font-size: 32px;
+  line-height: 120%;
 }
 
 h6 {
-    font-family: 'Montserrat500';
-    font-size: 24px;
-    line-height: 140%;
+  font-family: "Montserrat500";
+  font-size: 24px;
+  line-height: 140%;
 }
 
 p {
-    font-family: 'Montserrat400';
-    font-size: 16px;
-    line-height: 140%;
+  font-family: "Montserrat400";
+  font-size: 16px;
+  line-height: 140%;
 }
 
 a {
-    font-family: 'Montserrat400';
-    font-size: 16px;
-    line-height: 140%; 
+  font-family: "Montserrat400";
+  font-size: 16px;
+  line-height: 140%;
 }
 
 .width-container {
-    margin: 0 auto;
-    max-width: 1920px;
-    padding: 0 130px;
-    box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 130px;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1280px) {
-    .width-container {
-      padding: 0 80px;
-    }
-    
-    h3 {
-        font-size: 40px;
-    }
-    
-    h4 {
-        font-size: 30px;
-    }
-    
-    h5 {
-        font-size: 28px;
-    }
-    
-    h6 {
-        font-size: 20px;
-    }
-    
+  .width-container {
+    padding: 0 80px;
   }
 
-  @media (max-width: 1024px) {
-    .width-container {
-        padding: 0 40px;
-      }
-
-      h1 {
-        font-size: 80px;
-    }
-    
-    h2 {
-        font-size: 40px;
-    }
-    
-    h3 {
-        font-size: 34px;
-    }
-    
-    h4 {
-        font-size: 26px;
-    }
-    
-    h5 {
-        font-size: 24px;
-    }
-    
-    h6 {
-        font-size: 18px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    a {
-        font-size: 14px;
-    }
+  h3 {
+    font-size: 40px;
   }
 
-  @media (max-width: 768px) {
-    .width-container {
-        padding: 0 20px;
-      }
-
-      h1 {
-        font-size: 80px;
-    }
-    
-    h2 {
-        font-size: 40px;
-    }
-    
-    h3 {
-        font-size: 34px;
-    }
-    
-    h4 {
-        font-size: 26px;
-    }
-    
-    h5 {
-        font-size: 24px;
-    }
-    
-    h6 {
-        font-size: 18px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    a {
-        font-size: 14px;
-    }
+  h4 {
+    font-size: 30px;
   }
 
-  @media (max-width: 375px) {
-    .width-container {
-        padding: 0 10px;
-      }
-
-      h1 {
-        font-size: 80px;
-    }
-    
-    h2 {
-        font-size: 40px;
-    }
-    
-    h3 {
-        font-size: 34px;
-    }
-    
-    h4 {
-        font-size: 26px;
-    }
-    
-    h5 {
-        font-size: 24px;
-    }
-    
-    h6 {
-        font-size: 18px;
-    }
-    
-    p {
-        font-size: 14px;
-    }
-    
-    a {
-        font-size: 14px;
-    }
+  h5 {
+    font-size: 28px;
   }
+
+  h6 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .width-container {
+    padding: 0 40px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 34px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 24px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .width-container {
+    padding: 0 48px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  a {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .width-container {
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  a {
+    font-size: 10px;
+  }
+}

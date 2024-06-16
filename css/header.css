@@ -8,6 +8,11 @@
   align-items: center;
 }
 
+.nav-bar div {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-bar img {
   width: 88px;
   height: 78px;
@@ -170,5 +175,132 @@
 
   .dwn-link {
     padding: 8px 30px;
+  }
+}
+
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+
+@media (max-width: 768px) {
+  .nav-bar {
+    margin-top: 10px;
+    height: 51px;
+  }
+  
+  .nav-bar img {
+    width: 57px;
+    height: 51px;
+  }
+  
+  .nav-links {
+    gap: 12px;
+  }
+  
+  .nav-links a {
+    font-size: 10px;
+  }
+  
+  .dwn-link {
+    padding: 10px 24px;
+  }
+  
+  .main-textblock {
+    width: 320px;
+  }
+  
+  .main-textblock p {
+    font-size: 10px;
+  }
+  
+  .app-links {
+    margin-top: 20px;
+  }
+  
+  .app-links a {
+    padding: 5px 12px;
+    width: 132px;
+    height: 35px;
+  }
+  
+  .app-links img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .app-links p {
+    font-size: 10px;
+  }
+  
+  .app-links span {
+    font-size: 12px;
+  }
+  
+  .proses {
+    margin-top: 20px;
+  }
+  
+  .proses-item p {
+    font-size: 18px;
+  }
+  
+  .proses-item span {
+    font-size: 12px;
+  }
+}
+
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 375px) {
+  
+  .mainscreen {
+    margin-top: 50px;
+   flex-direction: column;
+  }
+  
+  .main-textblock {
+    /* justify-content: center; */
+    max-width: 340px;
+  }
+  
+  .mainscreen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .app-links {
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+  
+  .app-links a {
+    width: 100%;
+    height: 35px;
+  }
+  
+  .app-links span {
+    font-size: 12px;
+  }
+  
+  .proses {
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .proses-item {
+    padding-right: 15px;
+  }
+  
+  .proses-item p {
+    font-size: 18px;
+  }
+  
+  .proses-item span {
+    font-size: 12px;
+  }
+
+  .mainscreen-img {
+    width: 100%;
   }
 }

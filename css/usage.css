@@ -16,6 +16,7 @@
   max-width: 100%;
   height: auto;
   display: block;
+  box-shadow: 0 16px 16px -10px rgba(0, 0, 0, 0.1);
 }
 
 .usage-dscrpt {
@@ -23,7 +24,7 @@
   flex-direction: column;
   max-width: 680px;
   gap: 30px;
-  background-image: url("/assets/usage/circle.png"); /* Путь к вашему изображению */
+  background-image: url("../assets/usage/circle.png");
   background-repeat: no-repeat;
   background-size: 37px 37px;
   background-position: top left;
@@ -38,5 +39,55 @@
 @media (max-width: 1024px) {
   .usage-img {
     max-width: 360px;
+  }
+}
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+@media (max-width: 768px) {
+  .usage {
+    margin-top: 60px;
+  }
+
+  .usage-step {
+    margin-top: 20px;
+  }
+
+  .usage-img {
+    max-width: 260px;
+  }
+
+  .usage-dscrpt {
+    max-width: 365px;
+    gap: 20px;
+  }
+
+  .usage-dscrpt p {
+    font-size: 12px;
+  }
+}
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 375px) {
+  .usage {
+    margin-top: 60px;
+  }
+
+  .usage-step {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .usage-img {
+    max-width: 220px;
+    order: -1;
+  }
+
+  .usage-dscrpt {
+    gap: 14px;
+    background-size: 18px 18px;
+  }
+
+  .usage-dscrpt p {
+   font-size: 12px;
   }
 }

@@ -22,14 +22,18 @@
             alt="Логотип компании Шезлонгер"
           />
         </div>
-        <ul class="nav-links">
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#possibilities">Возможности</a></li>
-          <li><a href="#usage">Как пользоваться</a></li>
-          <li><a href="#news">Новости</a></li>
-          <li><a href="#contacts">Контакты</a></li>
-          <li><a class="dwn-link" href="" target="_blank">Скачать</a></li>
-        </ul>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#possibilities">Возможности</a></li>
+            <li><a href="#usage">Как пользоваться</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <!-- <li><a class="dwn-link" href="" target="_blank">Скачать</a></li> -->
+          </ul>
+          <a class="dwn-link" href="" target="_blank">Скачать</a>
+        </div>
+        <button class="js-burger-btn burger-btn"></button>
       </nav>
       <!-- Главный экран -->
       <div class="mainscreen" id="about">
@@ -63,6 +67,7 @@
               <p>Get it on<span>Google Play</span></p></a
             >
           </div>
+
           <!-- Преимущества -->
           <div class="proses">
             <div class="proses-item">
@@ -76,9 +81,8 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="mainscreen-img">
           <img
-            class="mainscreen-img"
             src="./assets/mainscreen/mainscreenImg.png"
             alt="Мокап приложения Шезлонгер"
           />
@@ -159,7 +163,8 @@
                   <a
                     href="https://apps.apple.com/ru/app/%D1%88%D0%B5%D0%B7%D0%BB%D0%BE%D0%BD%D0%B3%D0%B5%D1%80/id6471227554"
                     target="_blank"
-                    > App store</a
+                  >
+                    App store</a
                   >
                 </p>
               </div>
@@ -346,85 +351,138 @@
 
       </section> -->
 
-      <section class="feedback">
+      <!-- Эксперемент
+        <section class="feedback">
         <button class="prev">
           <img src="./assets/feedback/arrow.png" alt="" />
         </button>
         <div class="slider-container">
           <div class="slider-inner">
             <div class="feedback-row">
-              <!-- Оригинальные элементы -->
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar1.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar1.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
               </div>
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar2.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar2.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
               </div>
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar3.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar3.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="feedback-row">
-              <!-- Оригинальные элементы -->
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar4.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar4.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
               </div>
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar5.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar5.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
               </div>
               <div class="feedback-item">
-                <img class="avatar" src="./assets/feedback/avatar6.png" alt="" />
+                <img
+                  class="avatar"
+                  src="./assets/feedback/avatar6.png"
+                  alt=""
+                />
                 <div class="text-block">
                   <div class="text-wrapper">
                     <p class="feedback-date">forest_jumpoo, 07/22/2023</p>
                     <p class="feedback-title">Спасибо за сотрудничество</p>
                     <p class="feedback-text">
-                      Finally found an app that allows me to share precious moments with my closest friends in a more personal and meaningful way. Threads app has exceeded my expectations with its seamless integration with Instagram and intuitive features. It's become an essential part of my social media toolkit!
+                      Finally found an app that allows me to share precious
+                      moments with my closest friends in a more personal and
+                      meaningful way. Threads app has exceeded my expectations
+                      with its seamless integration with Instagram and intuitive
+                      features. It's become an essential part of my social media
+                      toolkit!
                     </p>
                   </div>
                 </div>
@@ -435,9 +493,8 @@
         <button class="next">
           <img src="./assets/feedback/arrow.png" alt="" />
         </button>
-      </section>
-      
-      
+      </section> -->
+
       <div class="width-container">
         <!-- Секция призыва скачать приложение -->
         <section class="cta">
@@ -580,6 +637,28 @@
       </div>
     </footer>
 
+    <!-- Меню бургер -->
+    <div class="widht-container">
+      <section class="js-burger burger">
+        <div class="js-burger_content burger-content">
+          <img
+            class="burger-logo-img"
+            src="./assets/mainscreen/logo.svg"
+            alt="Логотип приложения Шезлонгер"
+          />
+          <ul class="burger__nav">
+            <li><a class="burger__nav-link" href="#about">О нас</a></li>
+            <li><a class="burger__nav-link" href="#posibilities">Возможности</a></li>
+            <li><a class="burger__nav-link" href="#usage">Как пользоваться</a></li>
+            <li><a class="burger__nav-link" href="#news">Новости</a></li>
+            <li><a class="burger__nav-link" href="#contacts">Контакты</a></li>
+          </ul>
+          
+        </div>
+      </section>
+    </div>
+
     <!-- <script src="./feedbackSlider.js"></script> -->
+    <script src="./menuBurger.js"></script>
   </body>
 </html>

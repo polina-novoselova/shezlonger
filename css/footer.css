@@ -48,3 +48,54 @@ footer {
 .footer-cta {
   align-content: center;
 }
+
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 40px;
+    padding: 15px 0;
+  }
+
+  .privacy p {
+    font-size: 10px;
+  }
+
+  .privacy a {
+    font-size: 10px;
+  }
+  
+  .contact-links {
+    gap: 24px;
+  }
+}
+
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 375px) {
+  .footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .provisions {
+    align-items: baseline;
+    gap: 12px;
+    justify-content: space-between;
+  }
+  
+  .contact-links {
+    justify-content: space-between;
+    order: -1;
+  }
+  
+  .links-wrapper {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+  }
+}

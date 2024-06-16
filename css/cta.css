@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/assets/cta/cta-bg1.png), url(/assets/cta/cta-bg2.png);
+    background-image: url(../assets/cta/cta-bg1.png), url(../assets/cta/cta-bg2.png);
     background-position: left top, right top;
     background-repeat: no-repeat;
 }
@@ -22,4 +22,51 @@
     width: 268px;
     height: auto;
     display: block;
+}
+
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+@media (max-width: 768px) {
+    .cta {
+        margin: 60px -48px 0 -48px;
+        padding: 34px 0;
+        background-size: contain;
+    }
+    
+    .sub-title {
+        margin-top: 24px;
+        font-size: 18px;
+    }
+    
+    .qr-code {
+        margin-top: 20px;
+        width: 185px;
+    }
+}
+
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 375px) {
+    .cta {
+        margin-top: 20px;
+        /* padding: 96px 0; */
+        height: 585px;
+        background-image: url(../assets/cta/cta-bg-375px.png);
+        background-size: contain;
+        background-position: center;
+    }
+
+    .cta div {
+        margin-top: 30px;
+        width: 280px;
+    }
+    
+    .sub-title {
+        margin-top: 40px;
+        font-size: 18px;
+    }
+    
+    .qr-code {
+        margin-top: 30px;
+    }
 }
