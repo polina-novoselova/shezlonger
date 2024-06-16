@@ -48,8 +48,7 @@
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
 @media (max-width: 375px) {
     .cta {
-        margin-top: 20px;
-        /* padding: 96px 0; */
+        margin-top: 60px;
         height: 585px;
         background-image: url(../assets/cta/cta-bg-375px.png);
         background-size: contain;
