@@ -1,6 +1,24 @@
 RewriteEngine On
+
+# Serve index.html for the root URL
+RewriteRule ^$ /index.html [L]
+
+# Serve index.html for /index
+RewriteRule ^index$ /index.html [L]
+
+# Serve app.html for /app
+RewriteRule ^app$ /app.html [L]
+
+# Serve privacy-policy.html for /privacy-policy
+RewriteRule ^privacy-policy$ /privacy-policy.html [L]
+
+# Serve agreement.html for /agreement
+RewriteRule ^agreement$ /agreement.html [L]
+
+# Allow direct access to privacy_policy.pdf
+RewriteRule ^privacy_policy\.pdf$ - [L]
+
+# Redirect any other request to /index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !/privacy-policy$  [NC]
-RewriteCond %{REQUEST_URI} !/app$  [NC]
-RewriteRule ^(.*)$ /index.html [L]
+RewriteRule . /index.html [L]
