@@ -1,0 +1,12 @@
+.inactive {
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+.app-links.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-links.column a{
+    width: 230px;
+}
