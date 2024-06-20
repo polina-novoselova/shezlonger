@@ -19,6 +19,11 @@
   width: 200px;
 }
 
+.cta img {
+  width: 45px;
+  height: 45px;
+}
+
 /* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
 @media (max-width: 768px) {
   .cta {
