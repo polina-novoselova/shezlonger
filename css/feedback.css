@@ -119,7 +119,6 @@
   opacity: 0.7;
 }
 
-
 /* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
 @media (max-width: 768px) {
   .feedback {
@@ -128,11 +127,11 @@
     gap: 20px;
     justify-content: start;
   }
-  
+
   .gallery__slides {
     padding: 0 15px;
   }
-  
+
   .feedback-item-wrapper {
     position: static;
     display: flex;
@@ -141,13 +140,13 @@
     height: 100%;
     width: 100%;
   }
-  
+
   .feedback-item-upper {
     display: flex;
     height: 210px;
     gap: 20px;
   }
-  
+
   .feedback-item-lower {
     position: static;
     bottom: -20px;
@@ -156,42 +155,42 @@
     height: 210px;
     gap: 20px;
   }
-  
+
   .avatar {
     width: 80px;
     height: 80px;
     align-self: flex-end;
   }
-  
+
   .text-block {
     padding: 0 40px;
-    width: 100%;
+    width: 500px;
   }
-  
+
   .text-wrapper {
     margin-top: 60px;
     display: flex;
     flex-direction: column;
   }
-  
+
   .feedback-title {
     font-size: 14px;
   }
-  
+
   .feedback-text {
     font-size: 10px;
   }
-  
+
   .gallery__control-prev,
   .gallery__control-next {
     width: 40px;
     height: 40px;
   }
-  
+
   .gallery__control-prev {
     margin-left: 10px;
   }
-  
+
   .gallery__control-next {
     margin-right: 10px;
   }
@@ -199,177 +198,80 @@
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .feedback {
-    position: relative;
-    margin-top: 100px;
+    position: static;
+    flex-direction: column;
+    margin-top: 40px;
     height: 600px;
-    display: flex;
-    gap: 30px;
-    justify-content: center;
+    gap: 20px;
+    overflow-y: scroll;
   }
-  
+
   .gallery__slides {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    position: static;
   }
-  
+
   .gallery__slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: static;
   }
-  
+
   .gallery__slide_active {
-    opacity: 1;
-  
-    position: relative;
-    transform: translateX(0);
+    position: static;
   }
-  
+
   .feedback-item-wrapper {
-    position: relative;
+    position: static;
     display: flex;
     flex-direction: column;
+    gap: 20px;
     height: 550px;
   }
-  
+
   .feedback-item-upper {
     display: flex;
-    height: 270px;
+    height: 180px;
     gap: 20px;
   }
-  
+
   .feedback-item-lower {
-    position: absolute;
-    bottom: -20px;
-    right: -400px;
-    display: flex;
-    height: 270px;
+    position: static;
+    height: 180px;
     gap: 20px;
   }
-  
+
   .avatar {
-    width: 125px;
-    height: 125px;
-    align-self: flex-end;
+    width: 44px;
+    height: 44px;
   }
-  
+
   .text-block {
-    padding: 0 40px;
-    width: 610px;
-    background-image: url(../assets/feedback/feedback-frame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    padding: 0 15px;
+    border-radius: 20px;
+    background-color: white;
   }
-  
+
   .text-wrapper {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
+    margin-top: 40px;
   }
-  
+
   .feedback-date {
     margin-top: 5px;
+    font-size: 10px;
   }
-  
+
   .feedback-title {
-    margin-top: 15px;
-    font-family: "Montserrat700";
-  }
-  
-  .feedback-text {
     margin-top: 5px;
-    font-family: "Montserrat200";
-    font-size: 14px;
+    font-size: 12px;
   }
-  
+
+  .feedback-text {
+    margin-top: 3px;
+    font-size: 10px;
+  }
+
   .gallery__control-prev,
   .gallery__control-next {
-    position: absolute;
-    background: none;
-    border: none;
-    cursor: pointer;
-    top: 45%;
-    width: 60px;
-    height: 60px;
-    opacity: 0.5;
-    filter: invert(1);
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 1;
-    transition: 0.05s;
-  }
-  
-  .gallery__control-prev {
-    margin-left: 25px;
-    left: 0;
-    background-image: url(../assets/feedback/arrow-prev.png);
-  }
-  
-  .gallery__control-next {
-    margin-right: 25px;
-    right: 0;
-    background-image: url(../assets/feedback/arrow-next.png);
-  }
-
-  .feedback {
-    margin-top: 100px;
-    position: relative;
-  }
-
-  .feedback-first-row {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-  }
-
-  .feedback-second-row {
-    display: flex;
-    gap: 40px;
-  }
-
-  .feedback-item {
-    display: flex;
-    height: 270px;
-    gap: 20px;
-  }
-
-  .avatar {
-    width: 125px;
-    height: 125px;
-    align-self: flex-end;
-  }
-
-  .text-block {
-    padding: 0 40px;
-    width: 600px;
-    background-image: url(../assets/feedback/feedback-frame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .text-wrapper {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .feedback-date {
-    margin-top: 5px;
-  }
-
-  .feedback-title {
-    margin-top: 15px;
-    font-family: "Montserrat700";
-  }
-
-  .feedback-text {
-    margin-top: 5px;
-    font-family: "Montserrat200";
-    font-size: 14px;
+    display: none;
   }
 }
