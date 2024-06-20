@@ -4,7 +4,7 @@
   height: 600px;
   display: flex;
   justify-content: center;
-  overflow: hidden; /* Ensure overflow is hidden */
+  overflow: hidden;
 }
 
 .gallery__slides {
@@ -14,7 +14,7 @@
 }
 
 .gallery__slide, .clone {
-  flex: 0 0 25%; /* Ensure each slide takes up 25% of the container width */
+  flex: 0 0 25%;
   height: 100%;
 }
 
@@ -93,12 +93,12 @@
 }
 
 .gallery__control-prev {
-  left: 20px; /* Adjust positioning as needed */
+  left: 20px; 
   background-image: url(../assets/feedback/arrow-prev.png);
 }
 
 .gallery__control-next {
-  right: 20px; /* Adjust positioning as needed */
+  right: 20px; 
   background-image: url(../assets/feedback/arrow-next.png);
 }
 
@@ -107,7 +107,7 @@
   opacity: 0.7;
 }
 
-/* Responsive styles for tablets */
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
 @media (max-width: 768px) {
   .feedback {
     margin-top: 40px;
@@ -116,17 +116,24 @@
     justify-content: start;
   }
 
-  .gallery__slide, .clone {
+  .gallery__slide {
     width: 100%;
+    flex: 1;
+    height: 100%;
   }
 
   .feedback-item-wrapper {
+    position: static;
+    align-content: center;
     height: 100%;
+    width: 100%;
   }
 
   .feedback-item-upper,
   .feedback-item-lower {
+    position: static;
     height: 210px;
+    gap: 20px;
   }
 
   .avatar {
@@ -135,7 +142,13 @@
   }
 
   .text-block {
-    width: 100%;
+    padding: 0 15px;
+    width: 420px;
+  }
+
+  .text-wrapper {
+    margin-top: 50px;
+    width: 400px;
   }
 
   .feedback-title {
@@ -153,41 +166,88 @@
   }
 }
 
-@media (max-width: 375px) {
+
+/* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
+@media (max-width: 450px) {
   .feedback {
-    margin-top: 20px;
-    height: auto;
-    gap: 15px;
+    position: relative;
     flex-direction: column;
-    align-items: center;
+    margin-top: 40px;
+    height: 600px;
+    gap: 20px;
+    overflow-y: scroll;
   }
 
   .gallery__slides {
+    position: static;
+    display: flex;
     flex-direction: column;
   }
 
-  .gallery__slide, .clone {
-    width: 100%;
-    height: auto;
+  .gallery__slide {
+    display: block;
+    position: static;
+  }
+
+  .gallery__slide_active {
+    position: static;
   }
 
   .feedback-item-wrapper {
-    height: auto;
+    margin-bottom: 0;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 550px;
   }
 
-  .feedback-item-upper,
+  .feedback-item-upper {
+    display: flex;
+    height: 180px;
+    gap: 20px;
+  }
+
   .feedback-item-lower {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
+    position: static;
+    height: 180px;
+    gap: 20px;
   }
 
   .avatar {
-    width: 80px;
-    height: 80px;
+    width: 44px;
+    height: 44px;
   }
 
   .text-block {
-    width: auto;
+    padding: 0 15px;
+    max-width: 350px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .text-wrapper {
+    margin-top: 40px;
+  }
+
+  .feedback-date {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .feedback-title {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .feedback-text {
+    margin-top: 3px;
+    font-size: 10px;
+    max-width: 325px;
+  }
+
+  .gallery__control-prev,
+  .gallery__control-next {
+    display: none;
   }
 }

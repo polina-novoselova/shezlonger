@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = Array.from(slidesContainer.children);
     const numClones = 4; // Number of slides to clone at each end
 
+    let maxScreenWidth = 450;
+
     const cloneSlides = () => {
         for (let i = 0; i < numClones; i++) {
             const firstClone = slides[i].cloneNode(true);
@@ -68,4 +70,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Adjust position on window resize
     window.addEventListener('resize', () => updateSliderPosition(true));
+
+    // Initial position adjustment
+//   updateSliderPosition(true);
+
+  // Adjust position on window resize
+//   window.addEventListener('resize', () => {
+//       if (window.innerWidth <= maxScreenWidth) {
+//           // Disable slider functionality
+//           slidesContainer.removeEventListener('transitionend', handleTransitionEnd);
+//           prevButton.removeEventListener('click', handlePrevClick);
+//           nextButton.removeEventListener('click', handleNextClick);
+//       } else {
+//           // Enable slider functionality if not already enabled
+//           slidesContainer.addEventListener('transitionend', handleTransitionEnd);
+//           prevButton.addEventListener('click', handlePrevClick);
+//           nextButton.addEventListener('click', handleNextClick);
+//           updateSliderPosition(true);
+//       }
+//   });
+
+//   // Check initial screen width
+//   if (window.innerWidth <= maxScreenWidth) {
+//       // Disable slider functionality initially
+//       slidesContainer.removeEventListener('transitionend', handleTransitionEnd);
+//       prevButton.removeEventListener('click', handlePrevClick);
+//       nextButton.removeEventListener('click', handleNextClick);
+//   }
 });
+
+
