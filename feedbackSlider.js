@@ -1,109 +1,102 @@
-// const ACTIVE_SLIDE_CLASSNAME = 'gallery__slide_active';
+document.addEventListener('DOMContentLoaded', () => {
+    const prevButton = document.querySelector('.gallery__control-prev');
+    const nextButton = document.querySelector('.gallery__control-next');
+    const slidesContainer = document.querySelector('.gallery__slides');
+    const slides = Array.from(slidesContainer.children);
+    const numClones = 4; // Number of slides to clone at each end
 
-// const slidesNodes = Array.from(document.querySelectorAll('.gallery__slide'));
-// console.log(slidesNodes);
-// const prevButtonNode = document.querySelector('.gallery__control-prev');
-// const nextButtonNode = document.querySelector('.gallery__control-next');
-// let activeId;
+    let maxScreenWidth = 450;
 
-// init();
+    const cloneSlides = () => {
+        for (let i = 0; i < numClones; i++) {
+            const firstClone = slides[i].cloneNode(true);
+            const lastClone = slides[slides.length - 1 - i].cloneNode(true);
 
-// function init() {
-//     activeId = 0;
-    
-//     prevButtonNode.addEventListener('click', () => {
-//         setActiveSlideById(getPrevId());
-//     });
-    
-//     nextButtonNode.addEventListener('click', () => {
-//         setActiveSlideById(getNextId());
-//     });
-// }
+            firstClone.classList.add('clone');
+            lastClone.classList.add('clone');
 
-// function setActiveSlideById(id) {
-//     const currentId = activeId;
-//     activeId = id;
+            slidesContainer.appendChild(firstClone);
+            slidesContainer.insertBefore(lastClone, slides[0]);
+        }
+    };
 
-//     slidesNodes[currentId].classList.remove(ACTIVE_SLIDE_CLASSNAME)
-//     slidesNodes[activeId].classList.add(ACTIVE_SLIDE_CLASSNAME)
-// }
+    const updateSliderPosition = (instant = false) => {
+        const slideWidth = updatedSlides[0].offsetWidth;
+        slidesContainer.style.transition = instant ? 'none' : 'transform 0.5s ease';
+        slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    };
 
-// function getPrevId() {
-//     return activeId === 0 ? slidesNodes.length - 1 : activeId - 1;
-// }
+    const handleTransitionEnd = () => {
+        const slideWidth = updatedSlides[0].offsetWidth;
+        if (updatedSlides[currentIndex].classList.contains('clone')) {
+            slidesContainer.style.transition = 'none';
+            if (currentIndex < numClones) {
+                currentIndex = updatedSlides.length - numClones * 2;
+            } else if (currentIndex >= updatedSlides.length - numClones) {
+                currentIndex = numClones;
+            }
+            slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+        isTransitioning = false; // Allow new transitions
+    };
 
-// function getNextId() {
-//     return activeId === (slidesNodes.length - 1) ? 0: activeId + 1;
-// }
+    const handlePrevClick = () => {
+        if (isTransitioning) return; // Prevent action if a transition is in progress
+        isTransitioning = true;
+        currentIndex--;
+        updateSliderPosition();
+    };
 
-// const ACTIVE_SLIDE_CLASSNAME = 'gallery__slide_active';
+    const handleNextClick = () => {
+        if (isTransitioning) return; // Prevent action if a transition is in progress
+        isTransitioning = true;
+        currentIndex++;
+        updateSliderPosition();
+    };
 
-// const slidesContainer = document.querySelector('.gallery__slides');
-// let slidesNodes = Array.from(document.querySelectorAll('.gallery__slide'));
-// const prevButtonNode = document.querySelector('.gallery__control-prev');
-// const nextButtonNode = document.querySelector('.gallery__control-next');
-// let activeIndex = 0;
+    cloneSlides();
 
-// init();
+    // Update the slides array
+    const updatedSlides = Array.from(slidesContainer.children);
+    let currentIndex = numClones;
+    let isTransitioning = false;
 
-// function init() {
-//     setInitialPositions();
-//     prevButtonNode.addEventListener('click', () => moveSlides('prev'));
-//     nextButtonNode.addEventListener('click', () => moveSlides('next'));
-// }
+    slidesContainer.addEventListener('transitionend', handleTransitionEnd);
+    prevButton.addEventListener('click', handlePrevClick);
+    nextButton.addEventListener('click', handleNextClick);
 
-// function setInitialPositions() {
-//     slidesNodes.forEach((slide, index) => {
-//         slide.style.transition = 'none';
-//         slide.style.transform = `translateX(${index * 100}%)`;
-//     });
-// }
+    // Initial position adjustment
+    updateSliderPosition(true);
 
-// function moveSlides(direction) {
-//     slidesNodes.forEach(slide => slide.style.transition = 'transform 0.5s ease');
+    // Adjust position on window resize
+    window.addEventListener('resize', () => updateSliderPosition(true));
 
-//     if (direction === 'next') {
-//         slidesNodes.forEach((slide, index) => {
-//             slide.style.transform = `translateX(${(index - 1) * 100}%)`;
-//         });
-//         setTimeout(() => {
-//             const firstSlide = slidesNodes.shift();
-//             slidesNodes.push(firstSlide);
-//             slidesContainer.appendChild(firstSlide);
-//             setInitialPositions();
-//         }, 500); // Duration of the CSS transition
-//     } else {
-//         slidesNodes.forEach((slide, index) => {
-//             slide.style.transform = `translateX(${(index + 1) * 100}%)`;
-//         });
-//         setTimeout(() => {
-//             const lastSlide = slidesNodes.pop();
-//             slidesNodes.unshift(lastSlide);
-//             slidesContainer.insertBefore(lastSlide, slidesNodes[0]);
-//             setInitialPositions();
-//         }, 500); // Duration of the CSS transition
-//     }
-// }
+    // Initial position adjustment
+//   updateSliderPosition(true);
+
+  // Adjust position on window resize
+//   window.addEventListener('resize', () => {
+//       if (window.innerWidth <= maxScreenWidth) {
+//           // Disable slider functionality
+//           slidesContainer.removeEventListener('transitionend', handleTransitionEnd);
+//           prevButton.removeEventListener('click', handlePrevClick);
+//           nextButton.removeEventListener('click', handleNextClick);
+//       } else {
+//           // Enable slider functionality if not already enabled
+//           slidesContainer.addEventListener('transitionend', handleTransitionEnd);
+//           prevButton.addEventListener('click', handlePrevClick);
+//           nextButton.addEventListener('click', handleNextClick);
+//           updateSliderPosition(true);
+//       }
+//   });
+
+//   // Check initial screen width
+//   if (window.innerWidth <= maxScreenWidth) {
+//       // Disable slider functionality initially
+//       slidesContainer.removeEventListener('transitionend', handleTransitionEnd);
+//       prevButton.removeEventListener('click', handlePrevClick);
+//       nextButton.removeEventListener('click', handleNextClick);
+//   }
+});
 
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
