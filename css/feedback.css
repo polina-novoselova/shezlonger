@@ -61,10 +61,16 @@
   flex-direction: column;
 }
 
-.feedback-date,
-.feedback-title,
+.feedback-date {
+  margin-top: 10px;
+}
+
+.feedback-title {
+  margin-top: 10px;
+}
+
 .feedback-text {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .feedback-title {
@@ -143,20 +149,27 @@
   }
 
   .text-block {
-    padding: 0 15px;
+    padding: 0 28px;
     width: 420px;
   }
 
   .text-wrapper {
-    margin-top: 50px;
-    width: 400px;
+    margin-top: 40px;
+    max-width: 400px;
+  }
+
+  .feedback-date {
+    margin-top: 4px;
+    font-size: 12px;
   }
 
   .feedback-title {
+    margin-top: 4px;
     font-size: 14px;
   }
 
   .feedback-text {
+    margin-top: 5px;
     font-size: 10px;
   }
 
