@@ -109,7 +109,7 @@
 }
 
 /* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .feedback {
     margin-top: 40px;
     padding: 0 15px;
