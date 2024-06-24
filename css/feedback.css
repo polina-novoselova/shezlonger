@@ -112,8 +112,8 @@
 @media (max-width: 768px) {
   .feedback {
     margin-top: 40px;
+    padding: 0 15px;
     height: 100%;
-    gap: 20px;
     justify-content: start;
   }
 
@@ -170,144 +170,35 @@
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
 @media (max-width: 450px) {
-  /* .feedback {
-    position: relative;
-    flex-direction: column;
-    margin-top: 40px;
-    padding-left: 15px;
-    height: 600px;
-    gap: 20px;
-    overflow-y: scroll;
-  }
-
-  .gallery__slides {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .gallery__slide {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    gap: 20px;
-  }
-
-  .gallery__slide_active {
-    position: static;
-  }
-
-  .feedback-item-wrapper {
-    margin-bottom: 0;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 550px;
-  }
-
-  .feedback-item-upper {
-    display: flex;
-    height: 180px;
-    gap: 20px;
-  }
-
-  .feedback-item-lower {
-    position: static;
-    height: 180px;
-    gap: 20px;
-  }
-
-  .avatar {
-    width: 44px;
-    height: 44px;
-  }
-
-  .text-block {
-    padding: 0 15px;
-    max-width: 350px;
-    border-radius: 20px;
-    background-color: white;
-  }
-
-  .text-wrapper {
-    margin-top: 40px;
-  }
-
-  .feedback-date {
-    margin-top: 5px;
-    font-size: 10px;
-  }
-
-  .feedback-title {
-    margin-top: 5px;
-    font-size: 12px;
-  }
-
-  .feedback-text {
-    margin-top: 3px;
-    font-size: 10px;
-    max-width: 325px;
-  }
-
-  .gallery__control-prev,
-  .gallery__control-next {
-    display: none;
-  } */
-
   .feedback {
-    position: relative;
-    flex-direction: column;
-    margin-top: 40px;
-    padding: 0 15px;
-    height: 400px;
-    gap: 20px;
-    overflow-y: scroll;
+    overflow-x: hidden;
   }
-
+  
   .gallery__slides {
-    position: static;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    transition: transform 0.5s ease;
+    will-change: transform;
   }
 
-  .gallery__slide {
+  .gallery__slide, .clone {
     display: flex;
     flex-direction: column;
-    padding: 0;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .gallery__slide_active {
-    position: static;
+    flex: 0 0 100%;
+    max-width: 100%;
+    gap: 15px;
   }
 
   .feedback-item-wrapper {
-    margin-bottom: 0;
-    width: 100%;
-    max-width: 100%;
-    position: static;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    height: ;
+    align-items: center;
+    width: 100%;
   }
 
-  .feedback-item-upper {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    gap: 15px;
-  }
-
+  .feedback-item-upper,
   .feedback-item-lower {
-    position: static;
-    flex-direction: row;
+    width: 100%;
     height: auto;
-    gap: 15px;
   }
 
   .avatar {
@@ -317,16 +208,13 @@
 
   .text-block {
     position: relative;
-    padding-bottom: 15px;
-    width: 100%;
-    max-width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    padding: 15px;
     border-radius: 10px;
-    background-image: url(../assets/feedback/bg-media-450.svg);
     background-color: white;
+    background-image: url(../assets/feedback/bg-media-450.svg);
     background-size: cover;
   }
-
 
   .text-block::before {
     content: ""; 
@@ -355,28 +243,34 @@
   }
 
   .feedback-date {
-    margin-top: 15px;
+    margin-top: 0;
+    display: block;
     font-size: 10px;
-    width: 100%;
-    max-width: 100%;
   }
 
   .feedback-title {
     margin-top: 5px;
+    display: block;
     font-size: 12px;
-    width: 100%;
-    max-width: 100%;
   }
-
-  .feedback-text {
+  
+  .feedback-text { 
+    display: block;
     margin-top: 3px;
     font-size: 10px;
-    width: 100%;
-    max-width: 100%;
   }
 
   .gallery__control-prev,
   .gallery__control-next {
-    display: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery__control-prev {
+    left: 0;
+  }
+  .gallery__control-next {
+    right: 0;
   }
 }
+
