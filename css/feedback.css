@@ -123,7 +123,8 @@
     justify-content: start;
   }
 
-  .gallery__slide {
+  .gallery__slide, .clone {
+    padding: 0;
     width: 100%;
     flex: 1;
     height: 100%;
@@ -131,6 +132,7 @@
 
   .feedback-item-wrapper {
     position: static;
+    padding: 0;
     align-content: center;
     height: 100%;
     width: 100%;
@@ -140,7 +142,7 @@
   .feedback-item-lower {
     position: static;
     height: 210px;
-    gap: 20px;
+    gap: 15px;
   }
 
   .avatar {
