@@ -31,7 +31,7 @@
             СКАЧИВАЙ <br/>
             ШЕЗЛОНГЕР
         </h2>
-        <div class="app-links">
+        <div class="app-links column">
             <a
                     class="appstore-link"
                     href="https://apps.apple.com/ru/app/%D1%88%D0%B5%D0%B7%D0%BB%D0%BE%D0%BD%D0%B3%D0%B5%D1%80/id6471227554"
@@ -109,5 +109,10 @@
 </footer>
 <script src="./feedbackSlider.js"></script>
 <script src="./menuBurger.js"></script>
+<script>const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('beach_id') && urlParams.has('id') && urlParams.has('type_id') && urlParams.has('sector_id')) {
+    const redirectTo = 'beach.shezlonger.ru://booking' + window.location.search;
+    window.location.href = redirectTo;
+}</script>
 </body>
 </html>

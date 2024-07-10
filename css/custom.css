@@ -2,11 +2,13 @@
     pointer-events: none;
     filter: grayscale(100%);
 }
-.app-links.column {
-    flex-direction: column;
-    align-items: center;
-}
+@media (max-width: 768px) {
+    .app-links.column {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.app-links.column a{
-    width: 230px;
+    .app-links.column a {
+        width: 150px;
+    }
 }
