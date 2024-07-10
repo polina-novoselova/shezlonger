@@ -10,19 +10,18 @@
   background-repeat: no-repeat;
 }
 
-.sub-title {
-  margin-top: 40px;
-  font-family: "Montserrat700";
-  font-size: 20px;
-  line-height: 120%;
-  text-align: center;
+.cta div {
+  margin-top: 60px;
 }
 
-.qr-code {
-  margin-top: 30px;
-  width: 268px;
-  height: auto;
-  display: block;
+.cta a {
+  padding: 5px 20px 5px 30px;
+  width: 200px;
+}
+
+.cta img {
+  width: 45px;
+  height: 45px;
 }
 
 /* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
@@ -33,15 +32,23 @@
     background-size: contain;
   }
 
-  .sub-title {
-    margin-top: 24px;
-    font-size: 18px;
+  .cta div {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
-  .qr-code {
-    margin-top: 20px;
-    width: 185px;
+  .cta a {
+    width: 200px;
+    height: 45px;
   }
+
+  .cta img {
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
@@ -51,21 +58,24 @@
     padding: 94px 0;
     height: 100%;
     background-image: url(../assets/cta/cta-bg-375px.png);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
   }
 
   .cta div {
     margin-top: 30px;
-    width: 280px;
+    width: 100%;
+    align-items: center;
   }
 
-  .sub-title {
-    margin-top: 20px;
-    font-size: 18px;
+  .cta a {
+    width: 180px;
+    height: 45px;
+    gap: 5px;
   }
 
-  .qr-code {
-    margin-top: 30px;
+  .cta img {
+    width: 40px;
+    height: 40px;
   }
 }

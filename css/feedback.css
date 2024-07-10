@@ -1,28 +1,44 @@
 .feedback {
+  position: relative;
   margin-top: 100px;
+  height: 600px;
   display: flex;
-  /* justify-content: center;
-  flex-wrap: wrap; */
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gallery__slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.gallery__slide, .clone {
+  padding: 20px 0;
+  flex: 0 0 25%;
+  height: 100%;
+}
+
+.feedback-item-wrapper {
+  position: relative;
+  display: flex;
   flex-direction: column;
-
+  height: 550px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
-.feedback-first-row {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.feedback-second-row {
-    display: flex;
-    justify-content: left;
-    gap: 40px;
-}
-
-.feedback-item {
+.feedback-item-upper,
+.feedback-item-lower {
   display: flex;
-  height: 270px;
   gap: 20px;
+  height: 270px;
+}
+
+.feedback-item-lower {
+  position: absolute;
+  bottom: -20px;
+  right: -400px;
 }
 
 .avatar {
@@ -33,7 +49,7 @@
 
 .text-block {
   padding: 0 40px;
-  width: 600px;
+  width: 610px;
   background-image: url(../assets/feedback/feedback-frame.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -46,140 +62,230 @@
 }
 
 .feedback-date {
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .feedback-title {
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+.feedback-text {
+  margin-top: 8px;
+}
+
+.feedback-title {
   font-family: "Montserrat700";
 }
 
 .feedback-text {
-  margin-top: 5px;
   font-family: "Montserrat200";
   font-size: 14px;
 }
 
-/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
-@media (max-width: 768px) {
-  .feedback {
-    margin-top: 40px;
-    flex-direction: row;
-    
-  }
-  
-  .feedback-first-row {
-      display: flex;
-      gap: 35px;
-      justify-content: ;
-  }
-  
-  .feedback-second-row {
-      display: flex;
-      gap: 35px;
-  }
-  
-  .feedback-item {
-    display: flex;
-    height: 270px;
-    gap: 20px;
-  }
-  
-  .avatar {
-    width: 125px;
-    height: 125px;
-    align-self: flex-end;
-  }
-  
-  .text-block {
-    padding: 0 40px;
-    width: 600px;
-    background-image: url(../assets/feedback/feedback-frame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  .text-wrapper {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .feedback-date {
-    margin-top: 5px;
-  }
-  
-  .feedback-title {
-    margin-top: 15px;
-    font-family: "Montserrat700";
-  }
-  
-  .feedback-text {
-    margin-top: 5px;
-    font-family: "Montserrat200";
-    font-size: 14px;
-  }
+.gallery__control-prev,
+.gallery__control-next {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  top: 45%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  filter: invert(1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: 0.05s;
 }
 
+.gallery__control-prev {
+  left: 20px; 
+  background-image: url(../assets/feedback/arrow-prev.png);
+}
+
+.gallery__control-next {
+  right: 20px; 
+  background-image: url(../assets/feedback/arrow-next.png);
+}
+
+.gallery__control-prev:hover,
+.gallery__control-next:hover {
+  opacity: 0.7;
+}
+
+/* СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА    СТИЛИ ДЛЯ ПЛАНШЕТА */
+@media (max-width: 1024px) {
+  .feedback {
+    margin-top: 40px;
+    padding: 0 15px;
+    height: 100%;
+    justify-content: start;
+  }
+
+  .gallery__slide, .clone {
+    padding: 0;
+    width: 100%;
+    flex: 1;
+    height: 100%;
+  }
+
+  .feedback-item-wrapper {
+    position: static;
+    padding: 0;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .feedback-item-upper,
+  .feedback-item-lower {
+    position: static;
+    height: 210px;
+    gap: 15px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .text-block {
+    padding: 0 28px;
+    width: 420px;
+  }
+
+  .text-wrapper {
+    margin-top: 40px;
+    max-width: 400px;
+  }
+
+  .feedback-date {
+    margin-top: 4px;
+    font-size: 12px;
+  }
+
+  .feedback-title {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+
+  .feedback-text {
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+  .gallery__control-prev,
+  .gallery__control-next {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 
 /* СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ    СТИЛИ ДЛЯ СМАРТФОНОВ */
-
-@media (max-width: 375px) {
+@media (max-width: 450px) {
   .feedback {
-    margin-top: 100px;
-    position: relative;
+    overflow-x: hidden;
   }
   
-  .feedback-first-row {
-      display: flex;
-      gap: 40px;
-      justify-content: center;
-  }
-  
-  .feedback-second-row {
-      display: flex;
-      gap: 40px;
-  }
-  
-  .feedback-item {
+  .gallery__slides {
     display: flex;
-    height: 270px;
-    gap: 20px;
+    transition: transform 0.5s ease;
+    will-change: transform;
   }
-  
-  .avatar {
-    width: 125px;
-    height: 125px;
-    align-self: flex-end;
-  }
-  
-  .text-block {
-    padding: 0 40px;
-    width: 600px;
-    background-image: url(../assets/feedback/feedback-frame.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  
-  .text-wrapper {
-    margin-top: 60px;
+
+  .gallery__slide, .clone {
     display: flex;
     flex-direction: column;
+    flex: 0 0 100%;
+    max-width: 100%;
+    gap: 15px;
   }
-  
+
+  .feedback-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .feedback-item-upper,
+  .feedback-item-lower {
+    width: 100%;
+    height: auto;
+  }
+
+  .avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .text-block {
+    position: relative;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: url(../assets/feedback/bg-media-450.svg);
+    background-size: cover;
+  }
+
+  .text-block::before {
+    content: ""; 
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    background-image: url(../assets/feedback/marks.svg);
+    width: 40px;
+    height: 40px;
+  }
+
+  .text-block::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background-image: url(../assets/feedback/stars.svg);
+    background-size: contain;
+    width: 100px;
+    height: 20px;
+  }
+
+  .text-wrapper {
+    margin-top: 20px;
+    width: 100%;
+  }
+
   .feedback-date {
-    margin-top: 5px;
+    margin-top: 0;
+    display: block;
+    font-size: 10px;
   }
-  
+
   .feedback-title {
-    margin-top: 15px;
-    font-family: "Montserrat700";
+    margin-top: 5px;
+    display: block;
+    font-size: 12px;
   }
   
-  .feedback-text {
-    margin-top: 5px;
-    font-family: "Montserrat200";
-    font-size: 14px;
+  .feedback-text { 
+    display: block;
+    margin-top: 3px;
+    font-size: 10px;
+  }
+
+  .gallery__control-prev,
+  .gallery__control-next {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery__control-prev {
+    left: 0;
+  }
+  .gallery__control-next {
+    right: 0;
   }
 }
+

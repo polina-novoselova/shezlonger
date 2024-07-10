@@ -211,6 +211,10 @@ a {
 }
 
 @media (max-width: 450px) {
+  body {
+    background-size: cover, 1500px auto;
+  }
+
   .width-container {
     margin: 0 auto;
     padding: 0 16px;
